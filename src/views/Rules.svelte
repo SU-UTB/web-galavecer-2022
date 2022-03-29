@@ -1,0 +1,56 @@
+<script>
+  const rulesFour = [
+    {
+      txt: 'Nominovat může pouze student nebo zaměstnanec UTB.'
+    },
+    {
+      txt: 'Nominován může být pouze student UTB (prezenční i kombinované formy studia, bakalářského, magisterského, '
+    },
+    {
+      txt: 'Nominován může být za zásluhy, které prospěly společnosti nebo i za svoji mimoškolní aktivitu prospěšnou okolí.'
+    },
+    {
+      txt: 'Pořadatel akce (Studentská unie UTB) si vyhrazuje právo vyřadit nominace ty, které neodpovídají těmto pravidlům, nebo jsou vulgární či urážlivé.'
+    },
+  ]
+
+  const lastTwoRules = [
+    {
+      txt: 'Pořadatel (Studentská unie UTB) má právo prověřit pravost hlasů a v případě pochybností nominovaného vyloučit za podvodné hlasování.'
+    },
+    {
+      txt: 'Pořadatel (Studentská unie UTB) je povinen kontaktovat výherce a domluvit se s nimi na dalším postupu.'
+    }
+  ]
+
+  const faculties = ['FMK', 'FAME', 'FAI', 'FT', 'FLKŘ', 'FHS']
+</script>
+
+<section id="rules">
+  <h1 class="text-lg uppercase mb-8">Pravidla nominací Galavečer 2022</h1>
+  <ol class="rules ">
+    {#each rulesFour as rule}
+      <li>{rule.txt}</li>
+    {/each}
+    <li>
+      Galavečer UTB má 6 základních kategorií:
+      <ul>
+        {#each faculties as faculty}
+          <li class="text-red uppercase">student {faculty}</li>
+        {/each}
+      </ul>
+      Pozn.: O těchto studentech rozhoduje vedení jednotlivých fakult.
+    </li>
+    <li>
+      Galavečer UTB 2022 má další 2 speciální kategorie:
+      <ul>
+        <li>Sportovec UTB</li>
+        <li>Sportovní tým UTB</li>
+      </ul>
+    </li>
+    <li>Poslední kategorií je <span class="text-red">Studentská cena</span> Studentská cena, do které spadají všichni výše uvedení a o umístění těchto studentů rozhodují zaměstnanci i studenti UTB, ale i široká veřejnost za pomoci svých hlasů (emailových adres) a to pouze jednou z jedné emailové adresy.</li>
+    {#each lastTwoRules as rule}
+      <li>{rule.txt}</li>
+    {/each}
+  </ol>
+</section>

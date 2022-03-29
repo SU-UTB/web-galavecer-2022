@@ -7,9 +7,6 @@ import css from 'rollup-plugin-css-only';
 import { sveltePreprocess } from 'svelte-preprocess/dist/autoProcess';
 
 const production = !process.env.ROLLUP_WATCH;
-// add more items into pages array to be include those pages
-// for multi page build
-const pages = ['home'];
 
 function serve() {
 	let server;
@@ -32,71 +29,50 @@ function serve() {
 	};
 }
 
-const multiSPA = page => {
-	if (page === 'home') {
-		return {
-			input: 'src/pages/home/home.js',
-			output: {
-				sourcemap: true,
-				format: 'iife',
-				name: 'app',
-				file: 'public/build/home.js'
-			},
-			plugins: [
-				svelte({
-					preprocess: sveltePreprocess(),
-					compilerOptions: {
-						dev: !production
-					}
-				}),
-				css({ output: 'home.css' }),
-				resolve({
-					browser: true,
-					dedupe: ['svelte']
-				}),
-				commonjs(),
-				!production && serve(),
-				!production && livereload('public'),
-				production && terser()
-			],
-			watch: {
-				clearScreen: false
+export default {
+	input: 'src/main.js',
+	output: {
+		sourcemap: true,
+		format: 'iife',
+		name: 'app',
+		file: 'public/build/bundle.js'
+	},
+	plugins: [
+		svelte({
+			preprocess: sveltePreprocess(),
+			compilerOptions: {
+				// enable run-time checks when not in production
+				dev: !production
 			}
-		}
+		}),
+		// we'll extract any component CSS out into
+		// a separate file - better for performance
+		css({ output: 'bundle.css' }),
+
+		// If you have external dependencies installed from
+		// npm, you'll most likely need these plugins. In
+		// some cases you'll need additional configuration -
+		// consult the documentation for details:
+		// https://github.com/rollup/plugins/tree/master/packages/commonjs
+		resolve({
+			browser: true,
+			dedupe: ['svelte']
+		}),
+		commonjs(),
+
+		// In dev mode, call `npm run start` once
+		// the bundle has been generated
+		!production && serve(),
+
+		// Watch the `public` directory and refresh the
+		// browser on changes when not in production
+		!production && livereload('public'),
+
+		// If we're building for production (npm run build
+		// instead of npm run dev), minify
+		production && terser()
+	],
+	watch: {
+		clearScreen: false
 	}
-
-	return {
-		input: `src/pages/${page}/${page}.js`,
-		output: {
-			sourcemap: false,
-			format: 'iife',
-			name: 'app',
-			file: `public/build/${page}.js`
-		},
-		plugins: [
-			svelte({
-				preprocess: sveltePreprocess(),
-				compilerOptions: {
-					dev: !production
-				}
-			}),
-			css({ output: `${page}.css` }),
-			resolve({
-				browser: true,
-				dedupe: ['svelte']
-			}),
-			commonjs(),
-			production && terser()
-		]
-	}
-}
-
-const exp = () => {
-	let expPages = [];
-	pages.forEach(page => expPages.push(multiSPA(page)));
-	return expPages;
-}
-
-exp();
-
-export default exp;
+};
