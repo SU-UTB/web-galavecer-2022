@@ -19,6 +19,7 @@ body {
 	color: #E8D696;
 	background: url('./assets/m_purp_bg.png') no-repeat top;
 	background-size: cover;
+	letter-spacing: 0.02em;
 }
 
 a {
@@ -31,7 +32,7 @@ a {
 }
 
 ol {
-	list-style: decimal;
+	list-style: upper-roman;
 	margin: auto;
-	padding-left: 1rem;
+	padding-left: 1.4rem;
 }
