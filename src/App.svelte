@@ -4,11 +4,13 @@
   import Home from './views/Home.svelte'
   import Rules from './views/Rules.svelte'
   import PersInfo from './views/PersInfo.svelte'
+  import Partners from './views/Partners.svelte'
   
   let views = [
     { id: 0, name: "O Galavečeru", component: Home },
     { id: 1, name: "PRAVIDLA", component: Rules },
     { id: 2, name: "OSOBNÍ ÚDAJE", component: PersInfo },
+    { id: 3, name: "partneři", component: Partners, isDesktop: true }
   ]
 
   let selectedView = views[0];
