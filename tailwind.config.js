@@ -9,7 +9,16 @@ module.exports = {
       red: '#FF0E1C',
       gold: '#E8D696',
       white: '#FFFFFF',
-
+      black: '#000000',
+      brown: '#4B2000',
+    },
+    screens: {
+      // => @media (min-width: 360px) { ... }
+      'extra-sm': '360px',
+      'sm': '420px',
+      'mobile': '480px',
+      'lg': '1024px',
+      'xl': '1280px',
     }
   },
   plugins: [

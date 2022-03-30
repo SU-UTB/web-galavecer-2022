@@ -15,15 +15,11 @@
 
 </script>
 
-<Header views={views} bind:selectedView />
+<Header views={ views } bind:selectedView />
 <main>
-  {#if selectedView.hasViews}
-    <svelte:component this={selectedView.component} bind:selectedView views={views} />
-    {:else}
-      <svelte:component this={selectedView.component} />
-  {/if}
+  <svelte:component this={ selectedView.component } bind:selectedView views={ views } />
 </main>
-<Footer views={views}  bind:selectedView />
+<Footer />
 
 <style>
 </style>
