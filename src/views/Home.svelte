@@ -1,4 +1,7 @@
 <script>
+import Partners from "../components/Partners.svelte";
+
+
   export let views, selectedView
 </script>
 
@@ -20,8 +23,11 @@
     <button class="redirect-link uppercase border-b-2 text-xl" on:click={ () => selectedView = views[1] } >
       pravidla
     </button>
-  </div>
+  </div>  
 </section>
+<div class="partners block md:hidden p-8 bg-white">
+  <Partners />
+</div>
 
 <style>
   /* #home {
