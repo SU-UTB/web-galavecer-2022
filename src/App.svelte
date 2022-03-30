@@ -7,7 +7,7 @@
   import Partners from './views/Partners.svelte'
   
   let views = [
-    { id: 0, name: "O Galavečeru", component: Home },
+    { id: 0, name: "O Galavečeru", component: Home, needsViewInfo: true },
     { id: 1, name: "PRAVIDLA", component: Rules },
     { id: 2, name: "OSOBNÍ ÚDAJE", component: PersInfo },
     { id: 3, name: "partneři", component: Partners, isDesktop: true }
@@ -19,7 +19,12 @@
 
 <Header views={ views } bind:selectedView />
 <main>
-  <svelte:component this={ selectedView.component } bind:selectedView views={ views } />
+  {#if selectedView.needsViewInfo}
+    <svelte:component this={ selectedView.component } bind:selectedView views={ views } />
+    {:else}
+      <svelte:component this={ selectedView.component } />
+  {/if}
+    
 </main>
 <Footer />
 

@@ -31,7 +31,7 @@
   ]
 </script>
 
-<div class="flex flex-wrap md:justify-around">
+<div class="flex flex-wrap md:justify-around md:mx-auto md:w-4/5 lg:w-3/5 md:h-full md:items-center">
   {#each faculties as faculty}
     <img src={faculty.imgSrc} alt={faculty.imgAlt} class="faculty w-4/5 px-2 sm:px-4 mb-8">
   {/each}

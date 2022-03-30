@@ -32,7 +32,7 @@ import VoteBtn from "../atoms/VoteBtn.svelte";
 </script>
 
 <section id="rules" class="py-8">
-  <div class="container px-2 mx-auto">
+  <div class="container px-2 mx-auto md:px-24">
     <h1 class="text-3xl uppercase mb-8 text-red text-center">Pravidla nominací<br/>Galavečer 2022</h1>
     <ol class="rules text-lg mb-12">
       {#each rulesFour as rule}
