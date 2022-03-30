@@ -1,13 +1,13 @@
 <script>
   const socialItems = [
     {
-      imgSrcDesktop: './assets/ig_w.svg',
+      imgSrcDesktop: '../assets/ig_w.svg',
       imgSrc: './assets/ig.svg',
       imgAlt: 'ig ikona',
       linkTo: 'https://www.instagram.com/studentskaunieutb/',
     },
     {
-      imgSrcDesktop: './assets/fb_w.svg',
+      imgSrcDesktop: '../assets/fb_w.svg',
       imgSrc: './assets/fb.svg',
       imgAlt: 'fb ikona',
       linkTo: 'https://www.facebook.com/studentskaunieutb',

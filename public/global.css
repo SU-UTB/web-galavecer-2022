@@ -1,6 +1,6 @@
 @font-face {
-  font-family: Bebas;
-  src: url('./fonts/Bebas.woff2') format('woff2');
+  font-family: BebasN;
+  src: url('./fonts/BebasNeue.ttf') format('truetype');
 }
 
 
@@ -15,11 +15,13 @@ body {
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
-	font-family: Bebas;
+	font-family: BebasN !important;
 	color: #E8D696;
 	background: url('./assets/m_purp_bg.png') no-repeat top;
 	background-size: cover;
 	letter-spacing: 0.02em;
+	text-transform: uppercase;
+	text-rendering: optimizeLegibility;
 }
 
 a {
@@ -47,7 +49,6 @@ ol {
 
 @media screen and (min-width: 1024px) {
 	body {
-		min-height: 100vh;
 		background: url('./assets/main_bg_lg.png') no-repeat center;
 		background-size: 100% 100%;
 	}
@@ -55,7 +56,6 @@ ol {
 
 @media screen and (min-width: 1600px) {
 	body {
-		min-height: 100vh;
 		background: url('./assets/main_bg.png') no-repeat center;
 		background-size: 100% 100%;
 	}

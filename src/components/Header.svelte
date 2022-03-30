@@ -8,6 +8,7 @@
   <nav class="md:flex justify-between md:px-8 lg:px-12 xl:px-20 md:pt-4 items-center">
     <div class="logo hidden md:flex md:w-1/4">
       <a href="./">
+        <source type="image/webp" srcset="./assets/brown_logo.webp">
         <img src="./assets/brown_logo.png" alt="Galavečer Univerzity Tomáše Bati">
       </a>
     </div>

@@ -1,8 +1,5 @@
 <script>
 import PartnerList from "../components/PartnerList.svelte";
-
-
-
 </script>
 
 <section id="partners" class="py-12 px-12 flex items-center">
@@ -23,7 +20,7 @@ import PartnerList from "../components/PartnerList.svelte";
   #partners {
     height: 80vh;
     background: url('../assets/partners_bg.svg') no-repeat center;
-    background-size: 80% 80%;
+    background-size: 90% 90%;
   }
 }
 </style>

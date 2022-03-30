@@ -1,9 +1,6 @@
 <script>
   import BackBtn from "../atoms/BackBtn.svelte";
   
-  import VoteBtn from "../atoms/VoteBtn.svelte";
-  
-  
     const persInfoList = [
       {
         headline: 'Základní ustanovení',
@@ -72,9 +69,9 @@
     ]
   </script>
   
-  <section id="rules" class="py-8">
-    <div class="container px-2 mx-auto">
-      <h1 class="text-3xl uppercase mb-8 text-red text-center">Zásady ochrany osobních<br />údajů Galavečer 2022</h1>
+  <section id="pers-info" class="py-8">
+    <div class="container px-2 md:px-12 mx-auto">
+      <h1 class="text-3xl uppercase mb-8 text-red text-center">Zásady ochrany osobních<br />údajů GALAVEČER 2022</h1>
       <ol class="pers-info text-lg mb-12" type="I">
         {#each persInfoList as persInfo}
           <li class="mb-4 pl-3">

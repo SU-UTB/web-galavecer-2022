@@ -10,7 +10,8 @@ import Partners from "./PartnerList.svelte";
   <Socials />
   <a href="https://www.instagram.com/studentskaunieutb/" rel="noreferrer noopener">
       <picture>
-        <source media="(min-width:768px)" srcset="./assets/su_w.png">
+        <source type="image/webp" media="(min-width:768px)" srcset="./assets/su_w.webp">
+        <source type="image/png" media="(min-width:768px)" srcset="./assets/su_w.png">
         <img src="./assets/su.png" alt="SU logo">
       </picture>
   </a>

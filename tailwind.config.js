@@ -28,6 +28,6 @@ module.exports = {
     content: [
       "./src/**/*.svelte",
     ],
-    enabled: false // disable purge in dev
+    enabled: true // disable purge in dev
   },
 };
