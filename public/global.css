@@ -15,3 +15,8 @@ body {
 a {
 	text-decoration: none;
 }
+
+.active-view {
+	color: red;
+	box-shadow: 0px 2px 0px red;
+}
