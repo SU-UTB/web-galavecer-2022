@@ -29,3 +29,9 @@ a {
 	color: #FF0E1C;
 	box-shadow: 0px 2px 0px #FF0E1C;
 }
+
+ol {
+	list-style: decimal;
+	margin: auto;
+	padding-left: 1rem;
+}
