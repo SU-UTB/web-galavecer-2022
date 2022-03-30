@@ -36,3 +36,27 @@ ol {
 	margin: auto;
 	padding-left: 1.4rem;
 }
+
+@media screen and (min-width: 768px) {
+	body {
+		min-height: 100vh;
+		background: url('./assets/main_bg_md.png') no-repeat center;
+		background-size: 100% 100%;
+	}
+}
+
+@media screen and (min-width: 1024px) {
+	body {
+		min-height: 100vh;
+		background: url('./assets/main_bg_lg.png') no-repeat center;
+		background-size: 100% 100%;
+	}
+}
+
+@media screen and (min-width: 1600px) {
+	body {
+		min-height: 100vh;
+		background: url('./assets/main_bg.png') no-repeat center;
+		background-size: 100% 100%;
+	}
+}
