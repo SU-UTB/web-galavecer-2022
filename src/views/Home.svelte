@@ -1,4 +1,6 @@
 <script>
+import VoteBtn from "../atoms/VoteBtn.svelte";
+
 import Partners from "../components/Partners.svelte";
 
 

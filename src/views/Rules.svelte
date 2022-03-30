@@ -1,4 +1,9 @@
 <script>
+import BackBtn from "../atoms/BackBtn.svelte";
+
+import VoteBtn from "../atoms/VoteBtn.svelte";
+
+
   const rulesFour = [
     {
       txt: 'Nominovat může pouze student nebo zaměstnanec UTB.'
@@ -29,7 +34,7 @@
 <section id="rules" class="py-8">
   <div class="container px-2 mx-auto">
     <h1 class="text-3xl uppercase mb-8 text-red text-center">Pravidla nominací<br/>Galavečer 2022</h1>
-    <ol class="rules text-lg">
+    <ol class="rules text-lg mb-12">
       {#each rulesFour as rule}
         <li class="mb-4 pl-3">{rule.txt}</li>
       {/each}
@@ -54,5 +59,9 @@
         <li class="mb-4 pl-3">{rule.txt}</li>
       {/each}
     </ol>
+
+    <VoteBtn />
+    <p class="text-xl text-center mt-4 mb-6">HLASOVÁNÍ končí 20. 4. 2022</p>
+    <BackBtn />
   </div>
 </section>
