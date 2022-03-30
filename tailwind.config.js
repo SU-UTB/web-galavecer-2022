@@ -6,13 +6,10 @@ module.exports = {
   },
   theme: {
     colors: {
-      // dark_blue: '#052230',
-      // turq_light: '#D0FFFF',
-      // turq_satur: '#3ADCDC',
+      red: '#FF0E1C',
+      gold: '#E8D696',
+      white: '#FFFFFF',
 
-    },
-    fontFamily: {
-      // 'body': ['"Bw Modelica"']
     }
   },
   plugins: [
