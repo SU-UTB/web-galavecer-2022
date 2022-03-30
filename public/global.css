@@ -3,6 +3,7 @@
   src: url('./fonts/Bebas.woff2') format('woff2');
 }
 
+
 html, body {
 	position: relative;
 	width: 100%;
@@ -16,6 +17,8 @@ body {
 	box-sizing: border-box;
 	font-family: Bebas;
 	color: #E8D696;
+	background: url('./assets/m_purp_bg.png') no-repeat top;
+	background-size: cover;
 }
 
 a {
