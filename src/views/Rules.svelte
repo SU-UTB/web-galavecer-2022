@@ -4,8 +4,8 @@ import BackBtn from "../atoms/BackBtn.svelte";
 import VoteBtn from "../atoms/VoteBtn.svelte";
 
 
-  const rulesFour = [ 'NOMINOVAT MŮŽE POUZE STUDENT NEBO ZAMĚSTNANEC UTB.', 'NOMINOVÁN MŮŽE BÝT POUZE STUDENT UTB (PREZENČNÍ I KOMBINOVANÉ FORMY STUDIA, BAKALÁŘSKÉHO, MAGISTERSKÉHO, INŽENÝRSKÉHO ČI DOKTORANDSKÉHO PROGRAMU).', 'Nominován může být za zásluhy, které prospěly společnosti nebo i za svoji mimoškolní aktivitu prospěšnou okolí.',
-'Pořadatel akce (Studentská unie UTB) si vyhrazuje právo vyřadit nominace ty, které neodpovídají těmto pravidlům, nebo jsou vulgární či urážlivé.'
+  const rulesFour = [ 'NOMINOVAT MŮŽE POUZE STUDENT NEBO ZAMĚSTNANEC UTB.', 'NOMINOVÁN MŮŽE BÝT POUZE STUDENT UTB (PREZENČNÍ I KOMBINOVANÉ FORMY STUDIA, BAKALÁŘSKÉHO, MAGISTERSKÉHO ČI DOKTORANDSKÉHO PROGRAMU).', 'Nominován může být za zásluhy, které prospěly společnosti nebo i za svoji mimoškolní aktivitu prospěšnou okolí.',
+'Pořadatel akce (Studentská unie UTB) si vyhrazuje právo vyřadit nominace, které neodpovídají těmto pravidlům, nebo jsou vulgární či urážlivé.'
   ]
 
   const lastTwoRules = [
@@ -39,8 +39,7 @@ import VoteBtn from "../atoms/VoteBtn.svelte";
       <li class="mb-4 pl-3">
         GALAVEČER UTB 2022 MÁ DALŠÍ 2 SPECIÁLNÍ KATEGORIE:
         <ul>
-          <li class="text-red">SPORTOVEC UTB</li>
-          <li class="text-red">SPORTOVNÍ TÝM UTB</li>
+          <li class="text-red">SPORTOVEC UTB / SPORTOVNÍ TÝM UTB</li>
         </ul>
       </li>
       <li class="mb-4 pl-3">POSLEDNÍ KATEGORIÍ JE <span class="text-red">STUDENTSKÁ CENA</span> STUDENTSKÁ CENA, DO KTERÉ SPADAJÍ VŠICHNI VÝŠE UVEDENÍ A O UMÍSTĚNÍ TĚCHTO STUDENTŮ ROZHODUJÍ ZAMĚSTNANCI I STUDENTI UTB, ALE I ŠIROKÁ VEŘEJNOST ZA POMOCI SVÝCH HLASŮ (EMAILOVÝCH ADRES) A TO POUZE JEDNOU Z JEDNÉ EMAILOVÉ ADRESY.</li>

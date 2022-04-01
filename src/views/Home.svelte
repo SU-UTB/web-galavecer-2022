@@ -27,12 +27,12 @@
         <div class="vote-btn uppercase text-center bg-red mt-2 extra-sm:mt-4 sm:mt-12 cursor-pointer mx-auto">
           <a class="inline-block px-8 py-1 extra-sm:py-3 text-2xl" href="https://forms.office.com/r/FrhgdhBs5E" target="_blank" rel="noreferrer noopener">NOMINUJ</a>
         </div>
-        <p class="text-xl text-center mt-4 sm:mt-8 text-brown">NOMINACE končí 7. 4. 2022</p>
+        <p class="text-xl text-center mt-4 sm:mt-8 text-brown">NOMINACE končí 7. 4. 2022 10:00</p>
       </div>
     </div>
     <div class="vote-desktop hidden md:block">
       <VoteBtn />
-      <p class="hidden md:block uppercase mt-8 text-lg">NOMINACE končí 7. 4. 2022</p>
+      <p class="hidden md:block uppercase mt-8 text-lg">NOMINACE končí 7. 4. 2022 10:00</p>
     </div>
     <button class="redirect-link md:hidden uppercase border-b-2 text-xl" on:click={ () => selectedView = views[1] } >
       pravidla
